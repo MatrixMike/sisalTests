@@ -1,0 +1,7 @@
+Wed Mar 07 14:35:03 AEDT 2018 
+
+tried to compile but failure occurs
+
+grep error:  config.log 
+
+
