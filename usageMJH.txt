@@ -3,3 +3,9 @@
 The build {./configure , make } sequence does lots of work but throws errors - see error file.
 However the compiler appears to start but needs tables in a specific location. 
 
+sudo make install
+the compiler is called sisalc and responds to --help   and -version    ...!
+
+
+
+

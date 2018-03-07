@@ -1,0 +1,21 @@
+ LL Parse, using binary files
+* Reading file: function.sis...
+
+version 1.8       (Mar 28, 1989)
+function.sis:1: Syntax Error corrected with auto-token insertion
+function.sis:1: Syntax Error corrected with auto-token insertion
+ **  1* DEFINE <NAME> function polar (x,y: real; returns real) 
+ error  ****** ******                                          
+function.sis:3: ERROR - Function 'sqrt' is undefined.
+function.sis:4: ERROR - Function 'atan' is undefined.
+function.sis:1: ERROR - Type of result number   1 incorrect in function polar
+function.sis:11: ERROR - Function '<NAME>' is listed in Define Stmt, but never defined.
+
+ accepted
+   10 lines in program
+    1 errors ( calls to corrector)
+    2 tokens inserted;    0 tokens deleted.
+    4 semantic errors
+Due to semantic errors the optimization and offset passes were skipped.
+match -C to -C... (sense=0)
+match -fileio to -fileio... (sense=0)
