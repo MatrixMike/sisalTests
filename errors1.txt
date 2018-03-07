@@ -1,0 +1,48 @@
+sisal-14.1.0$ make
+Making all in Frontend/Front1
+make[1]: Entering directory '/media/mikeh/mikeSpace/sisal-14.1.0/Frontend/Front1'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/media/mikeh/mikeSpace/sisal-14.1.0/Frontend/Front1'
+Making all in Tools/sisalc
+make[1]: Entering directory '/media/mikeh/mikeSpace/sisal-14.1.0/Tools/sisalc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/media/mikeh/mikeSpace/sisal-14.1.0/Tools/sisalc'
+Making all in Backend/Library
+make[1]: Entering directory '/media/mikeh/mikeSpace/sisal-14.1.0/Backend/Library'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/media/mikeh/mikeSpace/sisal-14.1.0/Backend/Library'
+Making all in Backend/If1opt
+make[1]: Entering directory '/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt'
+/usr/bin/gcc   -g -O2  -lm -o if1opt opt.o AssignIDs.o callreorder.o cascade.o if1cse.o if1dead.o if1dope.o if1explode.o if1fission.o if1fold.o if1fusion.o if1gcse.o if1inline.o if1invar.o if1invert.o if1move.o if1normal.o if1parallel.o if1reduce.o if1split.o if1unroll.o ifxstuff.o util.o ../Library/libifx.a 
+if1fold.o: In function `Fold':
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1516: undefined reference to `floor'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1501: undefined reference to `floor'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1446: undefined reference to `pow'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1444: undefined reference to `pow'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1638: undefined reference to `log'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1638: undefined reference to `log'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1641: undefined reference to `log10'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1641: undefined reference to `log10'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1644: undefined reference to `exp'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1644: undefined reference to `exp'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1647: undefined reference to `sin'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1647: undefined reference to `sin'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1650: undefined reference to `cos'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1650: undefined reference to `cos'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1653: undefined reference to `tan'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1653: undefined reference to `tan'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1656: undefined reference to `asin'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1656: undefined reference to `asin'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1659: undefined reference to `acos'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1659: undefined reference to `acos'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1662: undefined reference to `atan'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1662: undefined reference to `atan'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1665: undefined reference to `sqrt'
+/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt/if1fold.c:1665: undefined reference to `sqrt'
+collect2: error: ld returned 1 exit status
+Makefile:286: recipe for target 'if1opt' failed
+make[1]: *** [if1opt] Error 1
+make[1]: Leaving directory '/media/mikeh/mikeSpace/sisal-14.1.0/Backend/If1opt'
+Makefile:330: recipe for target 'all-recursive' failed
+make: *** [all-recursive] Error 1
+
