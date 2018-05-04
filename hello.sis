@@ -13,9 +13,11 @@ define main
 
 % I'm planning on adding some convience built-ins
 % like string and complex
+% extra line to check compiler reads this - mjh
 
 type string = array[character];
 
 function main(returns string)
-  "Hello world!"
+  "Hello my world!"
+  % test compiler error by changing end to nd
 end function

@@ -6,6 +6,9 @@ However the compiler appears to start but needs tables in a specific location.
 sudo make install
 the compiler is called sisalc and responds to --help   and -version    ...!
 
+if exec from install folder and point it at a .sis file (e.g. in ~/sisalTests ) then it accepts the file - see hello.txt
+
+
 
 
 

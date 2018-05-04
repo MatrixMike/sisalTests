@@ -1,0 +1,74 @@
+<HEAD>
+<HTML>
+<HEAD>
+<TITLE>sisalc -- SISAL compiler</TITLE>
+</HEAD>
+<BODY>
+<H1>sisalc -- SISAL compiler</H1>
+<TABLE BORDER NOSAVE>
+<TR><TD>--html</TD><TD>Display information on options and arguments as HTML</TD></TR>
+<TR><TD>--man</TD><TD>Display information on options and arguments as man nroff</TD></TR>
+<TR><TD>-prefix<BR>--show_prefix</TD><TD>Show installation path head</TD></TR>
+<TR><TD>-version<BR>--show_version</TD><TD>Show full osc version number</TD></TR>
+<TR><TD>-majorversion<BR>--show_majorversion</TD><TD>Show short osc version number</TD></TR>
+<TR><TD>-fileio<BR>--file_io</TD><TD>Use stdin/stdout to read/write strings</TD></TR>
+<TR><TD>-x<BR>--noinline</TD><TD>Supress auto inlining</TD></TR>
+<TR><TD>-v<BR>--verbose</TD><TD>Echo commands to stderr before executing them</TD></TR>
+<TR><TD>--help<BR>--usage</TD><TD>Display information on options and arguments</TD></TR>
+<TR><TD>-n<BR>--just-print</TD><TD>Don't actually run any commands, just print them.</TD></TR>
+<TR><TD>-pg<BR>--profiling</TD><TD>Compile/link intermediate C code with -pg for profiling.</TD></TR>
+<TR><TD>-IF1</TD><TD>Stop after generating .if1</TD></TR>
+<TR><TD>-MONO</TD><TD>Stop after generating .mono file</TD></TR>
+<TR><TD>-OPT</TD><TD>Stop after generating .opt</TD></TR>
+<TR><TD>-MEM</TD><TD>Stop after generating .mem</TD></TR>
+<TR><TD>-UP</TD><TD>Stop after generating .up file</TD></TR>
+<TR><TD>-PART</TD><TD>Stop after generating .part file</TD></TR>
+<TR><TD>-C</TD><TD>Stop after generating .c file</TD></TR>
+<TR><TD>-c</TD><TD>Stop after generating .o files</TD></TR>
+<TR><TD>-%</TD><TD>Show comments in generated source code</TD></TR>
+<TR><TD>-forC</TD><TD>Compile to call from C</TD></TR>
+<TR><TD>-forFORTRAN</TD><TD>Compile to call from FORTRAN</TD></TR>
+<TR><TD>-w<BR>--warn</TD><TD>Suppress warning messages</TD></TR>
+<TR><TD>-module<BR>--module</TD><TD>Suppress warning messages</TD></TR>
+<TR><TD>-&lt;no-&gt;opt</TD><TD>Control Sisal backend optimization (on by default)</TD></TR>
+<TR><TD>-&lt;no-&gt;concur</TD><TD>Build for serial or concurrent (default)</TD></TR>
+<TR><TD>-&lt;no-&gt;vector</TD><TD>Generate code for vectorized loops (off by default)</TD></TR>
+<TR><TD>-&lt;no-&gt;aggvector</TD><TD>Apply aggressive vectorization (off by default)</TD></TR>
+<TR><TD>-&lt;no-&gt;descriptor-bind</TD><TD>Assume the shape of arrays through the FORTRAN and C FLI is fixed (default)</TD></TR>
+<TR><TD>-&lt;no-&gt;bounds</TD><TD>Control bounds checking (on by default)</TD></TR>
+<TR><TD>-&lt;no-&gt;slice-throttle</TD><TD>Control slice throttle feature that runs short parallel loops serially (on by default)</TD></TR>
+<TR><TD>-keep<BR>--keep-intermediate</TD><TD>Do not discard temporary files</TD></TR>
+<TR><TD>--&lt;no-&gt;using-FORTRAN</TD><TD>Use if linking .o files from FORTRAN</TD></TR>
+<TR><TD>-p &lt;number&gt;<BR>--processors &lt;number&gt;</TD><TD>Partition for this many cpus 1</TD></TR>
+<TR><TD>-iter &lt;number&gt;<BR>--assumed-iterations &lt;number&gt;</TD><TD>Assume this many iterations for loops to drive partition 1000</TD></TR>
+<TR><TD>--parallel-cost-threshold &lt;number&gt;</TD><TD>Parallelize loops that have a predicted cost higher than this 7000</TD></TR>
+<TR><TD>CC=&lt;string&gt;</TD><TD>Compile using this C compiler</TD></TR>
+<TR><TD>CFLAGS=&lt;string&gt;</TD><TD>Use these C compiler flags</TD></TR>
+<TR><TD>F77=&lt;string&gt;</TD><TD>Compile using this FORTRAN compiler</TD></TR>
+<TR><TD>FFLAGS=&lt;string&gt;</TD><TD>Use these FORTRAN flags</TD></TR>
+<TR><TD>LD=&lt;string&gt;</TD><TD>Use these FORTRAN flags</TD></TR>
+<TR><TD>LDFLAGS=&lt;string&gt;</TD><TD>Add to link/loader</TD></TR>
+<TR><TD>-o &lt;string&gt;</TD><TD>Executable (default s.out) or object output file name</TD></TR>
+<TR><TD>-main &lt;string&gt;</TD><TD>Name of main function (default main)</TD></TR>
+<TR><TD>-tmpdir &lt;string&gt;</TD><TD>Where to put temporary files</TD></TR>
+<TR><TD>-e=&lt;string&gt;<BR>--external-entry=&lt;string&gt;</TD><TD>Preserve function as an entry</TD></TR>
+<TR><TD>-externC=&lt;string&gt;<BR>--extern-C-function=&lt;string&gt;</TD><TD>Declare this function available as a C external</TD></TR>
+<TR><TD>-externFORTRAN=&lt;string&gt;<BR>--extern-FORTRAN-function=&lt;string&gt;</TD><TD>Declare this function available as a FORTRAN external</TD></TR>
+<TR><TD>-I*&lt;string&gt;</TD><TD>These are passed unmodified to the C and F77 compilers</TD></TR>
+<TR><TD>-D*&lt;string&gt;</TD><TD>These are passed unmodified to the C and F77 compilers</TD></TR>
+<TR><TD>-U*&lt;string&gt;</TD><TD>These are passed unmodified to the C and F77 compilers</TD></TR>
+<TR><TD>*.sis</TD><TD>You may include multiple Sisal files.  They are monolithically merged</TD></TR>
+<TR><TD>*.if1</TD><TD>You may include multiple IF1 files.  They are monolithically merged</TD></TR>
+<TR><TD>*.mono</TD><TD>The Sisal monolith is a merged grouping of all Sisal functions (1 per compilation)</TD></TR>
+<TR><TD>*.opt</TD><TD>The optimized Sisal monolith (1 per compilation)</TD></TR>
+<TR><TD>*.mem</TD><TD>Memory optimized intermediate (1 per compilation)</TD></TR>
+<TR><TD>*.up</TD><TD>Memory optimized intermediate (1 per compilation)</TD></TR>
+<TR><TD>*.part</TD><TD>Memory optimized intermediate (1 per compilation)</TD></TR>
+<TR><TD>*.c</TD><TD>You may include previously generated code (the -C option) or user supplied C source</TD></TR>
+<TR><TD>*.f</TD><TD>User supplied FORTRAN77 source</TD></TR>
+<TR><TD>*.F</TD><TD>User supplied FORTRAN77 source</TD></TR>
+<TR><TD>*.f77</TD><TD>User supplied FORTRAN77 source</TD></TR>
+<TR><TD>*.o</TD><TD>User supplied object file</TD></TR>
+<TR><TD>*</TD><TD>System specific loader options</TD></TR>
+</TABLE>
+</BODY>
