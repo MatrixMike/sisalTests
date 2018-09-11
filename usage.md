@@ -11,4 +11,7 @@ In build process {download from sourceforge, extract and build}
 that produced errors - but maybe the link stage fails due to the order of linking - seen that in other projects...
 
 also do make in Frontend/Front1 and exec the result
+Note: the compiler has several phases and corresponding options to stop after these phases. These can be enumerated.
+A recent session on RPi seemed to show that a successful compilation was achieved.
+Also note to use the .html file  in Tools/sisalc/sisalc.html
 
