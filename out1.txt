@@ -1,0 +1,10 @@
+ LL Parse, using binary files
+* Reading file: hello.sis...
+
+version 1.8       (Mar 28, 1989)
+
+ accepted
+   23 lines in program
+    0 errors ( calls to corrector)
+    0 tokens inserted;    0 tokens deleted.
+    0 semantic errors
