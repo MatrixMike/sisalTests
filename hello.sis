@@ -18,6 +18,6 @@ define main
 type string = array[character];
 
 function main(returns string)
-  "Hello my world!"
+  "Hello my world! 2"
   % test compiler error by changing end to nd
 end function
