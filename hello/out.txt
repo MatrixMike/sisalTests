@@ -1,0 +1,2 @@
+armv7l-unknown-linux-gnueabi SISAL 1.2 (PThreads) ?.?
+armv7l-unknown-linux-gnueabi SISAL 1.2 (PThreads) ?.?
