@@ -1,0 +1,29 @@
+%**************************************************************************%
+%* FILE   **************         hello.sis         ************************%
+%**************************************************************************%
+%* Author: Patrick Miller January  2 2001				  *%
+%* Copyright (C) 2001 Patrick Miller					  *%
+%**************************************************************************%
+%* You just have to do hello world (though I usually like "hi mom" myself)*%
+%**************************************************************************%
+% $Log:
+%**************************************************************************%
+
+define main
+
+% I'm planning on adding some convience built-ins
+% like string and complex
+% extra line to check compiler reads this - mjh
+
+type string = array[character];
+
+function emit(returns string)
+  "emitted string"
+end function
+
+function main(returns string)
+  emit()
+%  emit()
+%  "Hello my world! 2"
+  % test compiler error by changing end to nd
+end function
