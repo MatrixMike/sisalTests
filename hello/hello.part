@@ -20,7 +20,7 @@ C$  N      CSU -> NORMALIZED: native, dead
 C$  P      CSU -> PARTITIONED:  sgnok
 C$  Q     UR
 C$  S      CSU -> UNIVERSAL STREAM OWNERSHIP
-C$  T Wed Sep 12 21:25:36 2018
+C$  T Wed Sep 12 21:42:47 2018
 C$  U      CSU -> UPDATE-IN-PLACE: cagg ststr sgnok
 C$  X      CANN MODULES: ProgramNoDataBase
 X 11 "main" %sf=hello.sis %fn=main %sl=20 %mk=e

@@ -7,6 +7,7 @@ type TwoDim = array [ OneDim ];
 %global atan( x: real returns real );
 
 %function polar (x,y: real; returns real)
+% mike1.sis:11: ERROR - Function 'sqrt' is undefined.
 %    let 
 %      r := sqrt (x*x + y*y);
 %      theta := atan(y/x);
