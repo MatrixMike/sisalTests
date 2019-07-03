@@ -1,0 +1,4 @@
+define main
+function main(a: record[x:real; y:integer]; returns real, integer)
+  a.x, a.y
+end function

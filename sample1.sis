@@ -1,0 +1,4 @@
+define main
+function main(returns real, integer, array[integer], record[x:integer; y:array[character]])
+  6.0, 4, array[0: 1,2,3], record[x:2; y:"my string"]
+end function
