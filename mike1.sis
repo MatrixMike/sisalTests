@@ -3,8 +3,8 @@ define main
 type string = array[character];
 type OneDim = array [ real ];
 type TwoDim = array [ OneDim ];
-global sqrt( x: real returns real );
-global atan( x: real returns real );
+global sqrt( x: real returns real )
+global atan( x: real returns real )
 
 function polar (x,y: real; returns real)
 %mike1.sis:11: ERROR - Function 'sqrt' is undefined.
@@ -60,6 +60,7 @@ let A, B := generate( n )
 in  doit( n, A, B )
 %testMJH ( 2,1)
 %  test2()
+%let p := polar (3.0, 4.0)
 end let
 
 end function % main
