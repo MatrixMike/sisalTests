@@ -1,6 +1,6 @@
 define polar
-%global sqrt( x: real returns real );
-%global atan( x: real returns real );
+global sqrt( x: real returns real );
+global atan( x: real returns real );
 function polar (x,y: real; returns real)
     let 
       r := sqrt (x*x + y*y);
@@ -9,5 +9,6 @@ function polar (x,y: real; returns real)
       r 
     end let
 end function
+define main
 
 
